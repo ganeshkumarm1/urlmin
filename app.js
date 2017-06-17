@@ -6,7 +6,7 @@ var path = require('path');
 
 var app = express();
 
-mongoose.connect('mongodb://urlmin:urlmin@ds127962.mlab.com:27962/urlmin', () => {
+mongoose.connect(process.env.MONGO_URL, () => {
 	console.log('Connected to mongodb');
 });
 
