@@ -81,3 +81,10 @@ a:visited {
 a:active {
 	text-decoration: none;
 }
+
+#loader {
+	color: #ff4436;
+	font-size: 15px;
+	display: none;
+	font-family: 'Roboto', sans-serif;
+}

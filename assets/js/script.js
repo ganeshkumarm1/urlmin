@@ -1,8 +1,9 @@
-var keyevents = true;
+var keyevents = true, pending = false;
 
 function openModal(response) {
-	$('#url').blur();
+	pending = !pending;
 	$('#url').val("");
+	$('#url').blur();
 	$('#urlmin input').val(response.minurl);
 	$('#original-url').attr('href', response.url);
 	$('#original-url').text(response.url);
@@ -13,18 +14,23 @@ $(document).ready(function() {
 	$('#url').focus();
 	$('form').on('submit', function(e) {
 		e.preventDefault();
-		if(keyevents)
+		$('#loader').show();
+		if(keyevents && !pending)
 		{
+			pending = !pending;
 			keyevents = !keyevents;
 			$.ajax({
 				url: '/',
 				method: 'POST',
 				data: {'url': $('#url').val() },
 				success: function(response) {
+					$('#loader').hide();
 					openModal(response);
 				},
 				error: function(response) {
-					alert(response);
+					$('#loader').hide();
+					pending = !pending;
+					alert('Internal Server Error');
 				}
 			});
 		}

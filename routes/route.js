@@ -16,6 +16,7 @@ router.route('/')
 	    res.sendFile(path.join(__dirname, '../views/index.html'));
 	})
 	.post((req, res) => {
+		console.log(req.body.url);
 		var curr_url = req.body.url;
 		var minurl = randomURL.url();
 		minurl = baseURL + minurl
