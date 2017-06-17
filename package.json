@@ -1,0 +1,13 @@
+{
+  "name": "urlmin",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "express": "~4.14.1",
+    "mongoose": "^4.10.6",
+    "validator": "^7.0.0"
+  }
+}

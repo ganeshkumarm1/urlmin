@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>URLMIN</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="/assets/css/style.css">
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		<div id="url-modal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">urlmin</h4>
+              </div>
+              <div class="modal-body">
+                <div class="input-group" id="urlmin">
+                    <input type="text" class="form-control">
+                    <span class="input-group-addon btn" id="copy">Copy</span>
+                </div>
+                <span>Original URL: <a href="" id="original-url" target="_blank"></a></span>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger modal-close" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="container-fluid" id="urlmin-section">
+        	<div class="row">
+        		<div class="col-md-12">
+        			<h1>urlmin</h1>
+                   
+        		</div>
+        	</div>
+        	<div class="row">
+        		<div class="col-md-6 col-md-offset-3 col-xs-12">
+        			<form action="" class="form">
+        				<div class="form-group">
+                                <input id="url" type="text" class="form-control" placeholder="Lengthy url here" required="true" pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)" />
+        				</div>
+        			</form>
+        		</div>
+        	</div>
+             <span id="author">by <a href="https://ganeshmkumar.github.io" target="_blank">GaNeShKuMaRm </a></span><span class="fa fa-smile-o"></span>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="/assets/js/script.js"></script>
+    </body>
+</html>

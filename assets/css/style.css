@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:800|Oleo+Script+Swash+Caps:700|Roboto');
+
+body {
+	background-color: #1A1C1D;
+}
+
+h1 {
+	font-family: 'Oleo Script Swash Caps';
+	color: #fafafa;
+	font-size: 50px;
+}
+
+#urlmin-section {
+	position: relative;
+	top: 180px;
+    text-align: center;
+}
+
+.form-control:focus {
+  border-color: #CCCCCC;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.modal-title {
+	text-align: center;
+	font-family: 'Oleo Script Swash Caps';
+	font-size: 30px;
+}
+
+#url {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	background-color: #343436;
+	border-color: #343436;
+	padding: 20px 20px;
+	height: 50px;
+	color: #ECEFF1;
+	font-family: 'Dosis';
+	font-size: 20px;
+}
+
+#minify {
+	background: #366ED1;
+	color: #fafafa;
+	border-color: #366ED1;
+}
+
+#urlmin {
+	margin-bottom: 10px;
+	font-family: 'Dosis';
+}
+
+#original-url {
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: #366ED1;
+}
+
+a, #author {
+	font-family: 'Roboto';
+	color: #fafafa;
+	transition: linear 0.3s;
+}
+
+ .fa-smile-o {
+	color: #fafafa;
+ }
+
+a:hover {
+	color: #fafafa;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+a:visited {
+	color: #fafafa;
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
