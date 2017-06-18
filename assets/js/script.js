@@ -39,15 +39,10 @@ $(document).ready(function() {
 	$('#copy').on('click', function() {
 		$('#urlmin input').select();
 		document.execCommand("copy");
-		$('#copy').text('Copied!');
-		$("#copy").css("pointer-events", "none");
 	});
 
 	$('.modal-close, .close').on('click', function() {
 		$('#url').focus();
 		keyevents = !keyevents;
-		$('#copy').text('Copy');
-		$("#copy").css("pointer-events", "auto");
-		$('#url').focus();
 	});
 });
