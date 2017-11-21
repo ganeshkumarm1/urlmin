@@ -55,6 +55,7 @@ h1 {
 	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
 	color: #366ED1;
+	word-wrap: break-word;
 }
 
 a, #author {
